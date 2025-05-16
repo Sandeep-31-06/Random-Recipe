@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Recipe App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <h2>Welcome to Dashboard</h2>
+  <div class="container">
+    <h2>🍲 Random Recipe Dashboard</h2>
+    <button onclick="getRecipe()">Get Random Recipe</button>
+    <div id="recipe"></div>
+    <button id="saveBtn" onclick="saveFavorite()">Save to Favorites</button>
+    <div id="favorites"></div>
+    <button onclick="loadFavorites()">
+❤️ Show Favorite Recipes</button>
+     <button onclick="logoutUser()">Logout</button>
+   
+
+  </div>
+
+  <script type="module" src="./firebase.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
